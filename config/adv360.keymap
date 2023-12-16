@@ -21,6 +21,7 @@
 / {
   behaviors {
     #include "macros.dtsi"
+    #include "version.dtsi"
 
     hm: homerow_mods {
         compatible = "zmk,behavior-hold-tap";
@@ -99,11 +100,11 @@
 
         layer_TestLayout {
             bindings = <
- &kp EQUAL  &kp N1     &kp N2        &kp N3    &kp N4  &kp N5              &tog 0                                                                                        &mo 3  &kp N6    &kp N7         &kp N8    &kp N9    &kp N0  &kp MINUS
-   &kp TAB   &kp Q      &kp W         &kp F     &kp P   &kp B               &to 5                                                                                        &none   &kp J     &kp L          &kp U     &kp Y  &kp SEMI   &kp BSLH
-   &kp ESC   &kp A      &kp R         &kp S     &kp T   &kp G               &to 0        &kp LGUI       &kp RCTRL                        &kp RCTRL         &kp RGUI      &none   &kp M     &kp N          &kp E     &kp I     &kp O    &kp SQT
- &kp LSHFT   &kp Z      &kp X         &kp C     &kp D   &kp V                                        &kp UP_ARROW                   &kp LEFT_ARROW                               &kp K     &kp H      &kp COMMA   &kp DOT  &kp FSLH  &kp ENTER
-     &mo 2  &kp F8  &kp RCTRL  &kp LEFT_ALT  &kp LGUI                    &kp BSPC  &kp LEFT_SHIFT  &kp DOWN_ARROW                  &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &kp SPACE          &kp RGUI  &kp RIGHT_ALT  &kp LBKT  &kp RBKT      &mo 2
+ &kp EQUAL  &kp N1     &kp N2          &kp N3    &kp N4  &kp N5              &tog 0                                                                                        &mo 3  &kp N6    &kp N7           &kp N8    &kp N9    &kp N0  &kp MINUS
+   &kp TAB   &kp Q      &kp W           &kp F     &kp P   &kp B               &to 5                                                                                        &none   &kp J     &kp L            &kp U     &kp Y  &kp SEMI   &kp BSLH
+   &kp ESC   &kp A      &kp R  &mt LEFT_GUI S     &kp T   &kp G               &to 0        &kp LGUI       &kp RCTRL                        &kp RCTRL         &kp RGUI      &none   &kp M     &kp N  &mt RIGHT_GUI E     &kp I     &kp O    &kp SQT
+ &kp LSHFT   &kp Z      &kp X           &kp C     &kp D   &kp V                                        &kp UP_ARROW                   &kp LEFT_ARROW                               &kp K     &kp H        &kp COMMA   &kp DOT  &kp FSLH  &kp ENTER
+     &mo 2  &kp F8  &kp RCTRL    &kp LEFT_ALT  &kp LGUI                    &kp BSPC  &kp LEFT_SHIFT  &kp DOWN_ARROW                  &kp RIGHT_ARROW  &kp RIGHT_SHIFT  &kp SPACE          &kp RGUI    &kp RIGHT_ALT  &kp LBKT  &kp RBKT      &mo 2
             >;
         };
 
